@@ -7,7 +7,7 @@ Created 2022-07-17
 
 
 ### Description
-Describe what your project is about and what it does
+We are investigating bikeshare data using the bikeshare.py to parse csv files and provide a variety of summary statistics about the data based on user input.
 
 ### Files used
 Include the files used
