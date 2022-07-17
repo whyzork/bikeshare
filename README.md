@@ -10,8 +10,11 @@ Created 2022-07-17
 We are investigating bikeshare data using the bikeshare.py to parse csv files and provide a variety of summary statistics about the data based on user input.
 
 ### Files used
-Include the files used
+bikeshare.py currently references three bikeshare data sources:
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The bikeshare.py template from https://video.udacity-data.com/topher/2021/May/6094a7cc_all-project-files/all-project-files.zip was a valuable start.
 
