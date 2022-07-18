@@ -75,9 +75,10 @@ def load_data(city, month, day):
     except:
         print("Bad city provided.")
         exit()
-    full_df['day_of_week'] = pd.to_datetime(full_df['Start Time']).dt.day_name().str.lower()
-    full_df['month'] = pd.to_datetime(full_df['Start Time']).dt.month_name().str.lower()
-    full_df['start_hour'] = pd.to_datetime(full_df['Start Time']).dt.hour
+    full_df['Start Time'] = pd.to_datetime(full_df['Start Time'])
+    full_df['day_of_week'] = full_df['Start Time'].dt.day_name().str.lower()
+    full_df['month'] = full_df['Start Time'].dt.month_name().str.lower()
+    full_df['start_hour'] = full_df['Start Time'].dt.hour
     if (month == "all") & (day == "all"):
         df = full_df
     elif month == 'all':
